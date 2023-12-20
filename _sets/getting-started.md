@@ -1,4 +1,4 @@
 ---
 title: Getting Started
-description: This series guides you through getting started on our platform.
+description: This is a collection of shit to get nice.
 ---
