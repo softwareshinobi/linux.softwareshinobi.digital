@@ -1,0 +1,1471 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../../Notes-With-Team/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.2">
+    
+    
+      
+        <title>HL7 Question & Answer - Developer Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.d451bc0e.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.a5377069.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../.styling.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="cyan" data-md-color-accent="purple">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#hl7-question-answer" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Developer Documentation" class="md-header__button md-logo" aria-label="Developer Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Developer Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              HL7 Question & Answer
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Developer Documentation" class="md-nav__button md-logo" aria-label="Developer Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Developer Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../my-favorites/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    My Favorites
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../personal-assistant-tracker/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Finding Personal Assistant
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project-management/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Activity Management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Amazon Web Services
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Amazon Web Services
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Amazon-Web-Services/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Billing
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            Billing
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Amazon-Web-Services/billing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_3" id="__nav_5_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Identity
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_3">
+            <span class="md-nav__icon md-icon"></span>
+            Identity
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Amazon-Web-Services/identity/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_4" id="__nav_5_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Lambda
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_4">
+            <span class="md-nav__icon md-icon"></span>
+            Lambda
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Amazon-Web-Services/lambda/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Docker Containers DEMO
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Docker Containers DEMO
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Docker-Containers-DEMO/conversion-detail-matrix/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Conversion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Docker-Containers-DEMO/development-guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Development
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Docker-Containers-DEMO/getting-started-guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting Started Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Docker-Containers-DEMO/how-to-article/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Maven Example
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Docker-Containers-DEMO/installation-guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Konsole Installation Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Docker-Containers-DEMO/software-architecture-guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Architecture
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Docker-Containers-DEMO/software-licenses/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Integrations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Docker-Containers-DEMO/user-guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    User Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    General Developer
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            General Developer
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_1" id="__nav_7_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Documentation
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_1">
+            <span class="md-nav__icon md-icon"></span>
+            Documentation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../General-Developer/Documentation/markdown-101/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Markdown Syntax 101
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    HL7 FHIR
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            HL7 FHIR
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FHIR 101
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    HL7 Question & Answer
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    HL7 Question & Answer
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-an-hl7-abstract-message-definition" class="md-nav__link">
+    What is an HL7 abstract message definition?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-the-scope-of-hl7" class="md-nav__link">
+    What is the scope of HL7?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-hl7-escape-successions" class="md-nav__link">
+    What Are Hl7 Escape successions?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-an-adt-message" class="md-nav__link">
+    What Is An ADT Message?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-z-segments" class="md-nav__link">
+    What Are Z Segments?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-an-orm-message" class="md-nav__link">
+    What Is An Orm Message?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-an-oru-message" class="md-nav__link">
+    What Is An Oru Message?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-the-acknowledgement-types-defined-by-hl7" class="md-nav__link">
+    What Are The Acknowledgement Types Defined By Hl7?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-is-it-must-have-party-configured" class="md-nav__link">
+    Why Is It Must Have Party Configured?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-can-we-modify-the-namespace-in-the-msh-schema" class="md-nav__link">
+    10. Can we modify the namespace in the MSH schema?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-when-does-dasm-generate-acknowledgments" class="md-nav__link">
+    11. When does DASM generate acknowledgments?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-what-differentiates-between-hl7-version-2-and-hl7-version-3" class="md-nav__link">
+    12. What differentiates between HL7 version 2 and HL7 version 3?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-differentiate-between-btahl72xreceive-and-btahl7xmlreceive" class="md-nav__link">
+    13. Differentiate Between Btahl72xreceive And Btahl7xmlreceive?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-how-to-create-an-hl7-interface-end-to-end" class="md-nav__link">
+    14. How to create an HL7 interface end-to-end?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-how-are-hl7-messages-parsed" class="md-nav__link">
+    15. How are HL7 messages parsed?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16-what-are-the-most-prominent-hl7-message-types" class="md-nav__link">
+    16. What are the most prominent HL7 message types?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17-what-is-an-hl7-message" class="md-nav__link">
+    17. What is an HL7 message?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18-how-are-hl7-messages-segments-structured" class="md-nav__link">
+    18. How are HL7 messages segments structured?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#19-what-is-a-non-standard-hl7-message" class="md-nav__link">
+    19. What is a non-standard HL7 message?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20-how-do-you-assimilate-hl7-documents-and-export-them-to-a-flat-file" class="md-nav__link">
+    20. How do you assimilate HL7 documents and export them to a flat-file?
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Notes With Team
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            Notes With Team
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes-With-Team/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Things With The Team
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    RESTful APIs
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            RESTful APIs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RESTful-APIs/questions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    REST Questions for Java and Spring Developers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-an-hl7-abstract-message-definition" class="md-nav__link">
+    What is an HL7 abstract message definition?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-the-scope-of-hl7" class="md-nav__link">
+    What is the scope of HL7?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-hl7-escape-successions" class="md-nav__link">
+    What Are Hl7 Escape successions?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-an-adt-message" class="md-nav__link">
+    What Is An ADT Message?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-z-segments" class="md-nav__link">
+    What Are Z Segments?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-an-orm-message" class="md-nav__link">
+    What Is An Orm Message?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-an-oru-message" class="md-nav__link">
+    What Is An Oru Message?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-the-acknowledgement-types-defined-by-hl7" class="md-nav__link">
+    What Are The Acknowledgement Types Defined By Hl7?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-is-it-must-have-party-configured" class="md-nav__link">
+    Why Is It Must Have Party Configured?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-can-we-modify-the-namespace-in-the-msh-schema" class="md-nav__link">
+    10. Can we modify the namespace in the MSH schema?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-when-does-dasm-generate-acknowledgments" class="md-nav__link">
+    11. When does DASM generate acknowledgments?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-what-differentiates-between-hl7-version-2-and-hl7-version-3" class="md-nav__link">
+    12. What differentiates between HL7 version 2 and HL7 version 3?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-differentiate-between-btahl72xreceive-and-btahl7xmlreceive" class="md-nav__link">
+    13. Differentiate Between Btahl72xreceive And Btahl7xmlreceive?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-how-to-create-an-hl7-interface-end-to-end" class="md-nav__link">
+    14. How to create an HL7 interface end-to-end?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-how-are-hl7-messages-parsed" class="md-nav__link">
+    15. How are HL7 messages parsed?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16-what-are-the-most-prominent-hl7-message-types" class="md-nav__link">
+    16. What are the most prominent HL7 message types?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17-what-is-an-hl7-message" class="md-nav__link">
+    17. What is an HL7 message?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18-how-are-hl7-messages-segments-structured" class="md-nav__link">
+    18. How are HL7 messages segments structured?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#19-what-is-a-non-standard-hl7-message" class="md-nav__link">
+    19. What is a non-standard HL7 message?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20-how-do-you-assimilate-hl7-documents-and-export-them-to-a-flat-file" class="md-nav__link">
+    20. How do you assimilate HL7 documents and export them to a flat-file?
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="hl7-question-answer">HL7 Question &amp; Answer</h1>
+<h2 id="what-is-an-hl7-abstract-message-definition">What is an HL7 abstract message definition?</h2>
+<p>The HL7 Control chapter covers a set of universal principles that apply to all messages. These rules define the fundamentals of message creation, data types conveyed, and message inter-relationships. The level 7 rules are also known as abstract message definitions since they are pure application layer rules.</p>
+<h2 id="what-is-the-scope-of-hl7">What is the scope of HL7?</h2>
+<p>The scope of HL7 begins with the specification of messages between application systems and the determination of the communication environment, which includes protocols such as TCP/IP and triggering events. Messages between application systems are specified. Environment for communication. Events that are triggered</p>
+<h2 id="what-are-hl7-escape-successions">What Are Hl7 Escape successions?</h2>
+<p>HL7 established character sequences indicate “special” characters that aren’t allowed in average HL7 messages. These sequences comprise an identifying symbol followed by zero or more characters and begin and finish with the message’s escape. The escape of the HL7 characters mentioned above is the most typical usage of these escape sequences.</p>
+<h2 id="what-is-an-adt-message">What Is An ADT Message?</h2>
+<p>ADT is a commonly used message in HL7, or admit discharge messages, which record patient demographics and records. They inform different linked systems about critical affected individual information, including whether the affected person has been disclosed, released, relocated, or modified their demographic records.</p>
+<h2 id="what-are-z-segments">What Are Z Segments?</h2>
+<p>It is utilized to ‘astound for’ truths that don’t live well-balanced right into the HL7 Standard information definitions. Z segments may be embedded into any message. There are no limitations to the records consisting of in Z segments or inside the style of Z segments bore in mind for HL7 information.</p>
+<h2 id="what-is-an-orm-message">What Is An Orm Message?</h2>
+<p>ORM messages are chosen to obtain information that comprises any request for clinical components. The transmission of ORM information occurs amongst the software application system putting the order and the health care application loading the purchase. The device that acquires the message for the HIS software plan is generally considered the ‘filler’ of the purchase.</p>
+<h2 id="what-is-an-oru-message">What Is An Oru Message?</h2>
+<p>ORUs, or even observational record notifications, are usually the outcome information from the “filler” utilization of the ORM message. They include sizes and beliefs from operations, identical to checking out outcomes from the lab or the radiology division. ORU messages can also be used for connecting demands and results to medical preliminaries.</p>
+<h2 id="what-are-the-acknowledgement-types-defined-by-hl7">What Are The Acknowledgement Types Defined By Hl7?</h2>
+<p>The ACK code is determined inside the MSA-1 area of the ACK message.</p>
+<p>The following codes are supported via HL7:</p>
+<p>AA – Application Accept</p>
+<p>AE – Application Error</p>
+<p>AR – Application Reject</p>
+<h2 id="why-is-it-must-have-party-configured">Why Is It Must Have Party Configured?</h2>
+<p>The HL7 parser is made to assess the event configuration for each HL7 information. It checks out the MSH.3 and tests for whether a gathering has been described. If it has, at that point, the HL7 parser complies with the setup provided via the HL7 arrangement explorer.</p>
+<h2 id="10-can-we-modify-the-namespace-in-the-msh-schema">10. Can we modify the namespace in the MSH schema?</h2>
+<p>Nonetheless, our company can no more alter it because the HL7 parser handiest stands for an individual MSH, the typical one which the HL7 gas supplies.</p>
+<h2 id="11-when-does-dasm-generate-acknowledgments">11. When does DASM generate acknowledgments?</h2>
+<p>If arranged for acknowledgment or MSH.15 and MSH16 request them, the DASM originates one or additional disclosures.</p>
+<h2 id="12-what-differentiates-between-hl7-version-2-and-hl7-version-3">12. What differentiates between HL7 version 2 and HL7 version 3?</h2>
+<p>HL7 model 3 (v3) is unlike HL7 model 2 (v2). While v2 gives a ‘negotiated framework’ for builders to effortlessly use and adapt, v3 becomes focused on being stricter preferred that aims to take away variances, to enhance interoperability among all customers of the Standard.</p>
+<h2 id="13-differentiate-between-btahl72xreceive-and-btahl7xmlreceive">13. Differentiate Between Btahl72xreceive And Btahl7xmlreceive?</h2>
+<p>Both are used to obtain HL7 messages. However, the former acquired HL7 notifications as flat documents and later developed HL7 messages as XML.</p>
+<h2 id="14-how-to-create-an-hl7-interface-end-to-end">14. How to create an HL7 interface end-to-end?</h2>
+<p>An HL7 interface for distinct message sorts has an import endpoint for acquiring messages, and export endpoints for delivering messages, and a way of shifting facts among the two endpoints.</p>
+<h2 id="15-how-are-hl7-messages-parsed">15. How are HL7 messages parsed?</h2>
+<p>Out-of-the-box, the eiConsole lenient parsing element handles something that appears even remotely like an HL7 v2.x message – which includes “byzantine” units of fields, features, and sub-additives that aren’t a part of the Standard. The HL7 message, which consists of any custom segments, converts without difficulty to XML.</p>
+<h2 id="16-what-are-the-most-prominent-hl7-message-types">16. What are the most prominent HL7 message types?</h2>
+<p>Common HL7 message types include:</p>
+<pre><code>ACK – General acknowledgment
+ADT – Admit, Discharge, Transfer
+BAR – Add or change the billing account
+DFT – Detailed financial transaction
+MDM – Medical document management
+ORM – Order (Pharmacy/treatment)
+ORU – Observation result (unsolicited)
+SIU – Scheduling information unsolicited
+</code></pre>
+<h2 id="17-what-is-an-hl7-message">17. What is an HL7 message?</h2>
+<p>Each HL7 message suggests the healthcare cause occasion described with the aid of using the HL7 Standard. It represents the particular healthcare records being exchanged in every message type.</p>
+<h2 id="18-how-are-hl7-messages-segments-structured">18. How are HL7 messages segments structured?</h2>
+<p>An HL7 message within the v2.x format is composed of coupled sections, every canceled by a carriage coming back. Elements come up in a described pattern. Depending upon the place, every region can have several electives, which may come from several components. Each all of them may also possess subcomponents.</p>
+<h2 id="19-what-is-a-non-standard-hl7-message">19. What is a non-standard HL7 message?</h2>
+<p>Non-standard HL7 messages are created, while exclusive structures and programs require customizing and increasing the Standard. HL7’s shape permits non-standard parcels or extra letters, and HL7 enables Z-segments for records factors described locally.</p>
+<h2 id="20-how-do-you-assimilate-hl7-documents-and-export-them-to-a-flat-file">20. How do you assimilate HL7 documents and export them to a flat-file?</h2>
+<p>PilotFish software program helps HL7 ingestion over MLLP (Minimal Lower Layer Protocol). The HL7 messages may be parsed right into a popular layout transformed to an XML or flat-document configuration.</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.a264c092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.726fbb30.min.js"></script>
+      
+    
+  </body>
+</html>
